@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1>Consulta de Hash de Diploma en la Blockchain</h1>
+        {% if formu.errors %}
+        <p style="color: red;">Por Favor ingresar datos validos</p>
+        {% endif %}
+        <form action="" method="POST"> {% csrf_token %}
+            <table>
+                {{formu.as_table}}
+            </table>
+            <input type="submit" value="Enviar" style="width: 150px">
+        </form>
+    </body>
+
+</html>
